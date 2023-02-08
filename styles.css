@@ -17,6 +17,7 @@ header {
     background-image: linear-gradient(to top right, rgb(97, 8, 148), rgb(10, 198, 235));
     */
     background-color: #070E13;
+    
     justify-content: space-between;
     align-items: center;
     padding: 5px;
@@ -47,7 +48,6 @@ nav a:hover {
     color: #3367d6;
     transition: 0.4s;
 }
-
 
 /* Sección de banner */
 
