@@ -1,71 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Cristian Patrone</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
     <script src="https://kit.fontawesome.com/2ac343d962.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    
+   <!--  <script src="./functions.js" defer ></script> -->
 </head>
 <body>
+
     <!--Encabezado-->
     <header>
-            <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank" class="logo">  <img src="logo2.png" alt=""></a>
+            <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank" class="logo">  <img src="/IMG/logo.png" alt="" width="100%" height=""></a>
 
-                <nav>
-                    <!-- PRUEBA
-                    <a href="#" class="nav-link">INICIO</a>
-                    <a href="#" class="nav-link">SOBRE MI</a>
-                    <a href="#" class="nav-link">EXPERIENCÍA</a>
-                    <a href="#" class="nav-link">EDUCACIÓN</a>
-                    <a href="#" class="nav-link">HABILIDADES</a>
-                    <a href="#" class="nav-link">PROYECTOS</a>
-                    <a href="#" class="nav-link">CONTACTOS</a>
-                    -->
-                    <a href="#" class="redes"><i class="fa-brands fa-whatsapp" ></i></a>
+
+                <nav nav class="navbar navbar-expand-lg" >
+                    <a href="https://api.whatsapp.com/send?phone=5493454052208" class="redes" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#" class="redes"><i class="fa-solid fa-envelope" ></i></a>
+                    <a href="#" class="redes"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/cristianarielpatrone" class="redes" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" class="login">Login</a>
+                    <!-- Button trigger modal -->
+                    <a href="#" class="redes">
+                        <i class="fa-solid fa-user-lock" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        </i>
+                    </a>           
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" value="">
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Iniciar sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
                 </nav> 
 
 
     </header>
 
     <!-- Banner-->
-    <section>
-        <img src="banner3.jpg" class="banner" alt="">
+                  
+    
+<!--   <div id="banner" class="banner">     
+        <div class="contenido-banner">
+            <div class="contenido-imagen">
+                <img src="/IMG/imagen.png" alt="">
+                <h1 class="Nombre">
+                        Cristian Patrone
+                </h1>
+                <span class="titulo">
+                        Full Stack Developer Jr.
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/IMG/banner3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div> -->
+
+    <section id="banner" class="banner">
+        <div class="contenido-seccion">
+            <div class="foto"><img src="/IMG/imagen.png" class="rounded-circle" alt=""></div>
+            <div class="info">
+                <h1>Hola, soy <strong> Cristian Patrone </strong></h1>
+                <h2>Full Stack Developer Jr.</h2>
+            </div>
+            
+        </div>
     </section>
 
     <!-- Sobre mi-->
     <section class="contenido">
         <div class="contenido-sobremi">
-            <h2> Sobre mí</h2>
-            Soy estudiante de la carrera de Administración de Empresas en la Universidad Siglo 21 y
+                <p> ... Y estudiante de la carrera de Administración de Empresas en la Universidad Siglo 21 y
                 Tecnico en Administración y Dirección de Empresas. Mis fortalezas son el trabajo en equipo, capacidad de resolución y análisis de problemas.
-                Soy amante del aprendizaje y me encuentro explorando el mundo de la programación, ya que desde joven me a intrigado el conocer como se crean las paginas y app web.</p>
+                Soy amante del aprendizaje y me encuentro explorando el mundo de la programación, ya que desde joven me a intrigado el conocer como se crean las paginas y app web.
+                </p>
+                <br>
 
                 <div class="datoscolumna">
-                    <h3>Datos Personales</h3>
+                    <h2 class="secciones" id="secciones">Datos Personales</h2>
                     <ul>
                         <li>
-                            <strong> Nombre completo: </strong>
+                            <i class="fa-solid fa-user"></i> <strong> Nombre completo: </strong>
                             Cristian Ariel Patrone
                         </li>
                         <li>
-                            <strong> Fecha de Nacimiento: </strong>
+                            <i class="fa-solid fa-cake-candles"></i> <strong> Fecha de Nacimiento: </strong>
                             21/09/1995
                         </li>
                         <li>
-                            <strong> Direccion: </strong>
+                            <i class="fa-solid fa-location-dot"></i> <strong> Direccion: </strong>
                             C. Guarumba 530, Concordia, Entre Ríos
                         </li>
                         <li>
-                            <strong> Teléfono: </strong>
-                            3454 052208
+                            <i class="fa-solid fa-mobile-screen-button"></i> <strong> Teléfono: </strong>
+                            3454-052208
                         </li>
                         <li>
-                            <strong> Email: </strong>
+                            <i class="fa-solid fa-envelope"></i> <strong> Email: </strong>
                             cristian.patrone@hotmail.com
                         </li>
                         
@@ -74,151 +141,150 @@
                 </div>
                 <button class="boton uno">
                     
-                        <span class="descargar"> Descargar CV <i class="fa-solid fa-download"></i></span>
+                        <span class="descargar" onclick="changeColor()"> Descargar CV <i class="fa-solid fa-download"></i></span>
                 </button>
         </div>
     </section>
 
 <!-- laboral -->  
-<!-- trabajo actual --> 
- <!-- trabajo anterior1 -->
-    <section>
-    <div>
-        <section id="laboral" class="laboral">
-            <div class="contenido">
-                <h2>
-                    Experiencía
-                </h2>
-                    <div class="columna">
-                        <h3>
-                            Consultor DAI
-                        </h3>
-                            <div class="trabajo">
-                                Finnegans S. A. - Software | julio 2022 - actualidad
-                                <div>
-                                        <ul>
-                                            <li> Asistir y capacitar a los usuarios en su implementación del sistema.</li>
-                                            <li> Relevar necesidades particulares de los cliente y proponer soluciones.</li>
-                                            <li> Analizar, detectar y proponer mejoras de negocio mediante el uso del sistema desde lo funcional.</li>
-                                            <li> Analizar y planificar acciones a llevar a cabo en la implementación del sistema</li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        <h3>
-                            Auxiliar Contable
-                        </h3>
-                            <div class="trabajo">
-                                Dilfer S. A. - Financiera | Enero 2021 - Julio 2022
-                                <div>
-                                        <ul>
-                                            <li> Conciliaciones de cuentas contables, bancarias e
-                                                impositivas.</li>
-                                            <li> Confección de reportes, informes y
-                                                presentaciones del estado actual de las cuentas
-                                                asignadas</li>
-                                            <li> Registro de comprobantes, gastos bancarios y de
-                                                tarjetas de crédito.</li>
-                                            <li> Comunicación directa con todas las áreas de la
-                                                empresa y con los proveedores</li>
-                                            <li> Mi mayor desempeño se encuentra en el análisis
-                                                de cuentas, conciliación y manejo de SAP.
-                                                </li>
-                                        </ul>
-                                    </div>
-                            </div>
-                    </div>
-                    <div class="columna">
-                        <h3>
-                            Gestor de Cobros
-                        </h3>
-                            <div class="trabajo">
-                                Dilfer S. A. - Financiera| Oct 2017 - Dic 2020
-                                <div>
-                                        <ul>
-                                            <li> Seguimiento de deudas vencidas.</li>
-                                            <li> Análisis de cuentas corrientes de clientes asignados</li>
-                                            <li> Gestión de análisis de riesgo crediticio y aplicación de planes de pago.</li>
-                                            <li>Desarrollo de habilidades de negociación, orientación y asesoramiento a clientes.</li>
-                                        </ul>
-                                    </div>
-                            </div>
-                    </div>
-                    
-            </div>
-        </section>
-    </div>
 
+    <section id="laboral" class="laboral">
+        <div class="contenido">
+            <h2 class="secciones">
+                Experiencía
+            </h2>
+            <img src="/IMG/finnegans.png" class="logo_empresa" alt="">
+            <div class="columna">
+                <div class="trabajo">
+                    <h3>
+                        Consultor DAI
+                    </h3>
+                     Finnegans S. A. - Software | julio 2022 - actualidad 
+                    <div>
+                        <ul>
+                            <li> Asistir y capacitar a los usuarios en su implementación del sistema.</li>
+                            <li> Relevar necesidades particulares de los cliente y proponer soluciones.</li>
+                            <li> Analizar, detectar y proponer mejoras de negocio mediante el uso del sistema desde lo
+                                funcional.</li>
+                            <li> Analizar y planificar acciones a llevar a cabo en la implementación del sistema</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+    
+                <img src="/IMG/dilfer.jpg" class="logo_empresa" alt="">
+                <div class="trabajo">
+                    <h3>
+                        Auxiliar Contable
+                    </h3>
+                    Dilfer S. A. - Financiera | Enero 2021 - Julio 2022
+                    <div>
+                        <ul>
+                            <li> Conciliaciones de cuentas contables, bancarias e
+                                impositivas.</li>
+                            <li> Confección de reportes, informes y
+                                presentaciones del estado actual de las cuentas
+                                asignadas</li>
+                            <li> Registro de comprobantes, gastos bancarios y de
+                                tarjetas de crédito.</li>
+                            <li> Comunicación directa con todas las áreas de la
+                                empresa y con los proveedores</li>
+                            <li> Mi mayor desempeño se encuentra en el análisis
+                                de cuentas, conciliación y manejo de SAP.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <img src="/IMG/dilfer.jpg" class="logo_empresa" alt="">
+                <div class="trabajo">
+                    <h3>
+                        Gestor de Cobros
+                    </h3>
+                    Dilfer S. A. - Financiera| Oct 2017 - Dic 2020
+                    <div>
+                        <ul>
+                            <li> Seguimiento de deudas vencidas.</li>
+                            <li> Análisis de cuentas corrientes de clientes asignados</li>
+                            <li> Gestión de análisis de riesgo crediticio y aplicación de planes de pago.</li>
+                            <li>Desarrollo de habilidades de negociación, orientación y asesoramiento a clientes.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
     </section>
 
-    <!-- Educacion-->
-        
-        
-        
+    <!-- Educacion-->      
        
-    <section>
-        <div>
-            <section id="educacion" class="educacion">
-                <div class="contenido">
-                    <h2>
-                        Educación
-                    </h2>
-                        <div class="columna">
-                            <h3>
-                                Universidad Siglo 21
-                            </h3>
-                                <div class="carrera">
-                                    Licenciatura en Administración
-                                        <div>
-                                            <ul>
-                                                <li> 2022 - Cursando</li>
-                                                <li> 17 materias aprobadas de 46</li>
-                                                <li> Promedio actual: 9</li>
-                                            </ul>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="columna">
-                            <h3>
-                                Instituto Técnico Superior Concordia
-                            </h3>
-                                <div class="carrera">
-                                    Tecnicatura en Administración de Empresas
-                                        <div>
-                                            <ul>
-                                                <li> 2019 - 2021</li>
-                                                <li> Graduado con promedio 9.25.</li>
-                                                <li> Delegado de promoción.</li>
-                                            </ul>
-                                        </div>
-                                </div>
-                        </div>
-
+    <section id="educacion" class="educacion">
+        <div class="contenido">
+            <h2 class="secciones">
+                Educación
+            </h2>
+            <div class="columna">
+                <img src="/IMG/siglo.png" class="logo_school" alt="">
+                <div class="carrera">
+                    <h3>
+                        Universidad Siglo 21
+                    </h3>
+                    Licenciatura en Administración
+                    <div>
+                        <ul>
+                            <li> 2022 - Cursando</li>
+                            <li> 17 materias aprobadas de 46</li>
+                            <li> Promedio actual: 9</li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="columna">
+                <img src="/IMG/ITS.jpg" class="logo_school" alt="">
+                <div class="carrera">
+                    <h3>
+                        Instituto Técnico Superior Concordia
+                    </h3>
+                    Tecnicatura en Administración de Empresas
+                    <div>
+                        <ul>
+                            <li> 2019 - 2021</li>
+                            <li> Graduado con promedio 9.25.</li>
+                            <li> Delegado de promoción.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
         </div>
+    </section>
 
-    </section>  
        
+    <!-- Porfolio -->
+    
     <section>
         <section id="portfolio" class="porfolio">
             <div class="contenido">
-                <h2>
+                <h2 class="secciones">
                     Portfolio
                 </h2>
-                    <h3>
-                        Porfolio web
-                    </h3>
-                     <img src="presentacion.png" alt="" class="presentacion">
-                    <ul>
-                        <li> Fecha de realización: En proceso</li>
-                        <li> Descripcion: Este porfolio es diseñado para crear al proyecto final del curso #YoProgramo   
-                        </li>
-                    </ul>
-                            
+                <div class="card" style="width: 18rem;">
+                    <img src="/IMG/porfolio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Porfolio Web</h5>
+                        <p class="card-text">Este porfolio es diseñado para crear al proyecto final del curso #YoProgramo.</p>
+                        <a href="#" class="btn btn-dark">Inicio</a>
+                    </div>
+                </div>
+
+                
             </div>
         </section>
     </section>
+    
+    <!-- SKILLS-->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>

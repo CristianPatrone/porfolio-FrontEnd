@@ -1,6 +1,7 @@
 * {
  margin: 0;
- padding: 0;  
+ padding: 0; 
+ box-sizing: border-box; 
 }
 
 /* Sección de header */
@@ -11,11 +12,11 @@ body {
 }
 header {
     display: flex;
-    height: 35px;
+    height: 50px;
     /* Prueba color del header 
     background-image: linear-gradient(to top right, rgb(97, 8, 148), rgb(10, 198, 235));
     */
-    background-color: rgb(17, 58, 79);
+    background-color: #070E13;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
@@ -26,52 +27,90 @@ header {
     
 }
 
+
 .redes {
-    color: rgb(253, 253, 254);
+    color: #A9AAA6;
     display: inline-block;
     text-decoration: none;
-    border: 1.5px solid rgb(207, 177, 225);
+    border: 1.5px solid #3367d6;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    margin: 25px 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    margin: 30px 7px;
     font-size: 15px;
     text-align: center;
 }
 
+
 nav a:hover {
-    color: rgb(207, 177, 225);
+    color: #3367d6;
     transition: 0.4s;
 }
 
-.login {
-    text-decoration: none;
-    color: rgb(253, 253, 254);
-    font-size: 12.5px;
-    margin: 5px;
-    border-radius: 20px;
-    border: 1.5px solid rgb(207, 177, 225);
-    padding: 5px;
-    align-content: center;
-    }
-
- 
 
 /* Sección de banner */
 
 .banner {
-    width: 100%;
-    height: 580px;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("/IMG/banner3.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #A9AAA6;
 }
+
+.banner .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.banner .contenido-seccion .info {
+    padding-bottom: 50px;
+}
+
+.banner .contenido-seccion .info h1 {
+    font-size: 2.5rem;
+    text-shadow: #124367 0px 0px 3px;
+    
+    
+}
+.banner .contenido-seccion .info h1 strong {
+    font-size: 2.5rem;
+    color: #3367d6 ;
+    text-shadow: #124367 0px 0px 3px;
+    
+}
+
+
+
+.banner .contenido-seccion .info h2 {
+    font-weight: normal;
+    font-size: 25px;
+    margin: -10px;
+}
+
+
+.banner .contenido-seccion .foto img {
+    max-width: 200px;
+    border: 3px solid #A9AAA6;
+    margin-top: 100px;
+    left: 50%;
+    top: -100px;
+    transform: translateX();
+    
+    
+}
+
+
 
 /* Sección Sobre mi */
 
 .contenido{
     margin-top: -5px;
-    background-color:rgb(17, 58, 79);
-    color: rgb(253, 253, 254);
-    padding: 50px 20px;
+    background-color:#070E13;
+    color: #A9AAA6;
+    padding: 20px 20px;
    
 }
 
@@ -81,22 +120,18 @@ nav a:hover {
 }
 
 
-.contenido h2{
-    font-size: 40px;
-    text-align: center;
-    padding: 10px 0;       
-}
-
 .contenido-sobremi p{
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
+    text-align: center;
     
 }
 
 .contenido-sobremi .datoscolumna h3{
     font-size: 25px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .contenido-sobremi .datoscolumna ul{
@@ -111,7 +146,7 @@ nav a:hover {
 
 .contenido-sobremi .datoscolumna ul li strong{
     display:inline-block;
-    color: rgb(207, 177, 225) ;
+    color:#124367 ;
 }
 
 
@@ -119,14 +154,14 @@ nav a:hover {
 .contenido button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid rgb(128, 72, 160);
+    border: 2px solid #460e7d;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 15px;
-    color: rgb(253, 253, 254);
+    color:#A9AAA6;
     position: relative;
     z-index: 10;
 
@@ -137,11 +172,11 @@ nav a:hover {
 	content: "";
 	width: 100%;
 	height: 100%;
-	background: rgb(253, 253, 254);
+	background: #A9AAA6;
 	position: absolute;
 	z-index: 1;
-	top: -40px;
-	left: -225px;
+	top: 0px;
+	left: -275px;
 	transition: 1s all;
 }
 
@@ -157,8 +192,8 @@ nav a:hover {
 	justify-content: center;
 	width: 100%;
 	height: 40px;
-	background: rgb(207, 177, 225);
-	color:  rgb(253, 253, 254);
+	background: #3367d6;
+	color:  #A9AAA6;
 	font-size: 20px;
 	font-weight: 500;
 	border: none;
@@ -178,17 +213,141 @@ nav a:hover {
 }
 
 .boton:hover {
-    color: rgb(128, 72, 160);
+    color: #070E13;
     transition: 0.1s all ;
 }
 
-/* seccion educion */
+/* .secciones {
+    background-color: #120C32;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 16px;
+    border-radius: 32px;
+    gap: 16px;
+    box-shadow: #FF995030 0px 8px 24px;
+} */
+
+.secciones {
+   
+    text-align: center;
+    /* margin: 40px 400px; */
+    position: relative;
+    color: #A9AAA6;
+    cursor: pointer; 
+    padding: 2px;
+    /* text-shadow: #2a85c5 0px 0px 2px; */
+    font-weight:bolder;
+    font-family: monospace;
+    
+}
+
+#secciones {
+    text-align: center;
+    /* margin: 40px 330px; */
+    margin: 20px;
+    position: relative;
+    color: #A9AAA6;
+    cursor: pointer; 
+    
+    
+}
+
+.secciones::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #460e7d;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.secciones:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
 
 
-/* seccion experiencia */
+
+/* seccion educacion */
+
+.educacion .contenido .logo_school {
+    width: 100px;
+    margin: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+       
+    
+}
+
+.educacion .contenido .carrera {
+    margin-left: 170px;
+    margin-top: -130px;
+}
+
+.educacion .contenido .carrera h3 {
+    color: #124367;
+    font-family: monospace;
+    font-weight: bolder;
+    
+
+}
+
+/* seccion laboral */
+
+.laboral .contenido .logo_empresa {
+    width: 100px;
+    margin: 25px;
+    margin-top: 20px;
+    border-radius: 10px;  
+    
+}
+
+.laboral .contenido .trabajo {
+    margin-left: 170px;
+    margin-top: -130px;
+    
+}
+
+.laboral .contenido .trabajo h3 {
+    color: #124367;
+    font-family: monospace;
+    font-weight: bolder;
+    
+}
+
+/* prueba titulo del puesto de trabajo */
+
+/* .laboral .contenido .trabajo h3 {
+    display: inline-block;
+    position: relative;
+    color: #3367d6;
+    cursor: pointer; 
+    
+    
+}
+
+.laboral .contenido .trabajo h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #A9AAA6;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.laboral .contenido .trabajo h3:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+} */
 
 /* seccion Porfolio */
 
-.presentacion{
-    width: 300px;
-}
