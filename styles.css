@@ -154,7 +154,7 @@ nav a:hover {
 .contenido button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #460e7d;
+    border: 2px solid #124367;
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -261,7 +261,7 @@ nav a:hover {
     height: 2px;
     bottom: 0px;
     left: 0;
-    background-color: #460e7d;
+    background-color: #124367;
     transform-origin: bottom center;
     transition: transform 0.25s ease-out;
 }
